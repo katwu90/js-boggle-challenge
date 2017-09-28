@@ -2,19 +2,36 @@
 
 # Boggle Challenge
 
-Test for words on a boggle board.
+## About This Challenge
+This challege is based on an old word game called [Boggle](https://en.wikipedia.org/wiki/Boggle) where you make words with the letters that are on a 4 by 4 tray. In the challenge, you are given all the letters in this tray and you are given coordinates to what letters you want in the tray. So for example, the tray you are given would look like this:
+"dibtloambcgrumps" which splits into a 4x4 to be:
+dibt
+loam
+bcgr
+umps
 
-Solve `boggle` as simply as possible. Then, solve
-`bigBoggle` and compare it to your `boggle` solution. You might notice
-patterns. Finish by make a single solution work for every kind of boggle
-presented here.
+The coordinates that you are given are rows, columns, where you start with row 0 which is the first row.
+
+0, 0,
+1, 1,
+2, 2,
+3, 3
+
+So these set of coordinates would spell out 'dog' from the given tray.
 
 ## Instructions
 
 1.  Fork and clone this repository.
 2.  Change into the new directory.
 3.  Install dependencies `npm install`.
-4.  Fulfill the listed requirements.
+4.  See `/lib/challenge.js` to see my solution to the challenge.
+5.  See `spec/challenge.spec.js` for the test
+6.  In terminal go into the directory and use `grunt test` to see the result of test.
+
+Solve `boggle` as simply as possible. Then, solve
+`bigBoggle` and compare it to your `boggle` solution. You might notice
+patterns. Finish by make a single solution work for every kind of boggle
+presented here.
 
 ## Requirements
 
